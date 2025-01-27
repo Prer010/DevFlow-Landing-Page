@@ -1,4 +1,5 @@
 body
 {
-    background-image: radial-gradient(#e5e7eb 5px, transparent 5px);
+    background-image: radial-gradient(#e5e7eb 1px, transparent 2px);
+    background-size: 16px 16px;
 }
