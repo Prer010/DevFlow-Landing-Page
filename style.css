@@ -1,4 +1,4 @@
-**{
+*{
     margin: 0;
     padding: 0;
 }
@@ -23,7 +23,10 @@ body{
     display: flex;
     align-items: center;
 }
-
+.nav ul a{
+    color: inherit;
+    text-decoration: none;
+}
 
 .main_portion{
     font-size: 1rem;
@@ -32,7 +35,7 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 2%;
+    padding: 5%;
     color: #2f2f2f;
     gap: 2ch;
 }
