@@ -11,14 +11,13 @@ body {
     display : flex;
     justify-content: space-between;
     background-color: white;
-    padding-left: 1rem;
-    padding-right : 1rem;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+padding-left: 1rem;
+padding-right : 1rem;
 }
 
 .icon {
-    display : flex;
-    align-items: center;
+display : flex;
+align-items: center;
     justify-content: center;
     gap : 3px;
     font-size: 1.3rem;
@@ -39,24 +38,18 @@ a {
 }
 
 .main_portion {
-    padding: 5%;
-    height: 70vh;
-    box-sizing: border-box;
-    background: 
-            url('public/pattern-1.png') no-repeat top left,
-            
-            url('public/pattern-2.png') no-repeat top right;
-    background-size: 20%, 15% ;
-    background-origin: padding-box;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+    padding: 5%;
     color: #2f2f2f;
     gap: 1.3rem;
+    position: relative;
+    text-align: center;
+    z-index: 10;
 }
-
 
 .enter_devflow{
     align-items: center;
@@ -125,17 +118,19 @@ a {
     cursor: pointer;
 }
 
+section {
+    display : block;
+    }
 
 footer {
-    display : block;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
     display: flex;
     justify-content: space-between;
-    background-color: #F8F8F8;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left : 2rem;
-    padding-right: 2rem;
+    background-color: #E8E8E8;
+padding-top: 3rem;
+padding-bottom: 3rem;
+padding-left : 5rem;
+padding-right: 5rem;
+background: linear-gradient(to bottom, white, #C8C8C8);
 }
 
 .items {
@@ -151,4 +146,51 @@ footer {
     gap : 10px;
     justify-content: center;
     align-items: center;
+    opacity: 68%;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pattern {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* **Positioning the Patterns** */
+.pattern-top-left {
+    top: 0;
+    left: 0;
+    transform: translate(10%, 10%);
+    background-image: url('./public/pattern1.PNG');
+}
+
+.pattern-bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: translate(10%, -10%);
+    background-image: url('./public/pattern2.png');
+}
+
+.pattern-top-right {
+    top: 0;
+    right: 0;
+    transform: translate(0%, 10%);
+    background-image: url('./public/pattern3.png');
+}
+
+.pattern-bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: translate(-10%, -10%);
+    background-image: url('./public/pattern4.PNG');
 }
