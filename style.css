@@ -11,13 +11,13 @@ body {
     display : flex;
     justify-content: space-between;
     background-color: white;
-padding-left: 1rem;
-padding-right : 1rem;
+    padding-left: 1rem;
+    padding-right : 1rem;
 }
 
 .icon {
-display : flex;
-align-items: center;
+    display : flex;
+    align-items: center;
     justify-content: center;
     gap : 3px;
     font-size: 1.3rem;
@@ -126,11 +126,11 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #E8E8E8;
-padding-top: 3rem;
-padding-bottom: 3rem;
-padding-left : 5rem;
-padding-right: 5rem;
-background: linear-gradient(to bottom, white, #C8C8C8);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left : 5rem;
+    padding-right: 5rem;
+    background: linear-gradient(to bottom, white, #C8C8C8);
 }
 
 .items {
